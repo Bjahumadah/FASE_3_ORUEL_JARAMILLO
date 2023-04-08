@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+body {
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image:url('img.jpg')
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+    position:relative;
+    background: rgba(255, 255, 255, 0.20);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+.input-group {
+	margin: 10px 0;
+}
+
+.input-group label {
+	display: block;
+}
+
+.input-group input[type="number"] {
+	width: 100%;
+}
+
+.button-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.resultado p {
+	margin: 10px 0;
+	font-weight: bold;
+}

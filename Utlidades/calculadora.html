@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de venta</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora de venta</h1>
+		<div class="input-group">
+			<label for="precio-compra">Precio de compra:</label>
+			<input type="number" id="precio-compra" step="0.01" min="0" required>
+		</div>
+		<div class="input-group">
+			<label for="utilidad">Porcentaje de utilidad:</label>
+			<input type="number" id="utilidad" step="0.01" min="0" max="100" required>
+		</div>
+		<div class="input-group">
+			<label for="iva">Porcentaje de IVA:</label>
+			<input type="number" id="iva" step="0.01" min="0" max="100" required>
+		</div>
+		<div class="button-group">
+			<button id="calcular" type="button">Calcular</button>
+			<button type="button" onclick="limpiarCasillas()">Limpiar</button>
+		</div>
+		<div class="resultado">
+			<p>Valor de venta: <span id="valor-venta"></span></p>
+			<p>Ganancia: <span id="ganancia"></span></p>
+			<p>IVA: <span id="valor-iva"></span></p>
+		</div>
+	</div>
+	<script src="calculadora.js"></script>
+</body>
+</html>
